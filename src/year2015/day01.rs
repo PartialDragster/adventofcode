@@ -1,6 +1,4 @@
 use std::fs;
-use std::iter::Map;
-use core::str::Chars;
 
 fn char_to_floor_change<'a>(instructions: &'a str) -> impl Iterator<Item = i32> + 'a {
     instructions.chars()
