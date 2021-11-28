@@ -1,14 +1,11 @@
 use itertools::Itertools;
-use std::fs::File;
-use std::io::{self, BufRead};
+
+use crate::year2015::utils;
 
 fn read_input() -> Vec<(u32, u32, u32)> {
-    let file = File::open("data/year2015/day02")
-        .expect("Couldn't open data file for year 2015 day 02");
-    io::BufReader::new(file)
-        .lines()
-        .map(|string| string.unwrap()
-             .split('x')
+    utils::read_file_to_lines("data/year2015/day02")
+        .iter()
+        .map(|string| string.split('x')
              .map(|c| c.parse()
                   .unwrap())
              .collect_tuple()
