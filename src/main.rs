@@ -10,6 +10,7 @@ fn main() {
         "year2015_day03" => year2015::day03::run(),
         "year2015_day04" => year2015::day04::run(),
         "year2015_day05" => year2015::day05::run(),
+        "year2015_day06" => year2015::day06::run(),
         puzzle => panic!("{} not recognised puzzle", puzzle),
     }
 }
