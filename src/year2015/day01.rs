@@ -1,4 +1,4 @@
-use std::fs;
+use crate::year2015::utils;
 
 fn char_to_floor_change<'a>(instructions: &'a str) -> impl Iterator<Item = i32> + 'a {
     instructions.chars()
@@ -24,13 +24,8 @@ fn calculate_first_basement(instructions: &str) -> usize {
         .unwrap()
 }
 
-fn read_input() -> String {
-    fs::read_to_string("data/year2015/day01")
-        .expect("Something went wrong reading the file")
-}
-
 pub fn run() {
-    let input: String = read_input();
+    let input: String = utils::read_file_to_string("data/year2015/day01");
     println!("{}", calculate_floor(&input));
     println!("{}", calculate_first_basement(&input));
 }

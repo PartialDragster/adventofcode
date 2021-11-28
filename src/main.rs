@@ -7,6 +7,7 @@ fn main() {
     match args[1].as_str() {
         "year2015_day01" => year2015::day01::run(),
         "year2015_day02" => year2015::day02::run(),
+        "year2015_day03" => year2015::day03::run(),
         puzzle => panic!("{} not recognised puzzle", puzzle),
     }
 }
