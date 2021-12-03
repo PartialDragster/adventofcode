@@ -1,6 +1,6 @@
 use itertools::Itertools;
 
-use crate::year2015::utils;
+use crate::utils::utils;
 
 fn read_input() -> Vec<(u32, u32, u32)> {
     utils::read_file_to_lines("data/year2015/day02")

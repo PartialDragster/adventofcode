@@ -1,6 +1,6 @@
 use std::collections::{HashSet};
 
-use crate::year2015::utils;
+use crate::utils::utils;
 
 fn contains_at_least_three_vowels(string: &str) -> bool {
     3 <= string.chars()

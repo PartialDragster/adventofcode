@@ -1,6 +1,6 @@
 use std::collections::HashSet;
 
-use crate::year2015::utils;
+use crate::utils::utils;
 
 fn calculate_house_deliveries(instructions: &str) -> usize {
     let init = (0, 0);

@@ -1,4 +1,4 @@
-use crate::year2015::utils;
+use crate::utils::utils;
 
 fn char_to_floor_change<'a>(instructions: &'a str) -> impl Iterator<Item = i32> + 'a {
     instructions.chars()

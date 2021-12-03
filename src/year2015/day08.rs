@@ -1,4 +1,4 @@
-use crate::year2015::utils;
+use crate::utils::utils;
 
 fn count_characters(sample: &str) -> (usize, usize) {
     let mut code_character_count = 0;

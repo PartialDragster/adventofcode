@@ -1,6 +1,8 @@
 use std::env;
 
 mod year2015;
+mod year2021;
+mod utils;
 
 fn main() {
     let args: Vec<String> = env::args().collect();
@@ -16,6 +18,7 @@ fn main() {
         "year2015_day09" => year2015::day09::run(),
         "year2015_day10" => year2015::day10::run(),
         "year2015_day11" => year2015::day11::run(),
+        "year2021_day01" => year2021::day01::run(),
         puzzle => panic!("{} not recognised puzzle", puzzle),
     }
 }

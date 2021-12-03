@@ -2,7 +2,7 @@ extern crate regex;
 
 use regex::Regex;
 
-use crate::year2015::utils;
+use crate::utils::utils;
 
 #[derive(Debug)]
 enum LightAction {

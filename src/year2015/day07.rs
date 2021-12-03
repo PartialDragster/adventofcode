@@ -5,7 +5,7 @@ use std::cell::RefCell;
 use std::collections::HashMap;
 use std::rc::Rc;
 
-use crate::year2015::utils;
+use crate::utils::utils;
 
 struct U16ary {
     value: u16,

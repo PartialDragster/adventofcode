@@ -4,7 +4,7 @@ use regex::Regex;
 use unordered_pair::UnorderedPair;
 use std::collections::{HashMap, HashSet};
 
-use crate::year2015::utils;
+use crate::utils::utils;
 
 fn parse_line(line: &str, cities: &mut HashSet<String>, distances: &mut HashMap<UnorderedPair<String>, u32>) -> (String, String, u32) {
     let re = Regex::new(r"(.*) to (.*) = (.*)").unwrap();
