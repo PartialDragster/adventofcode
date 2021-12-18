@@ -1,6 +1,6 @@
 use crate::utils::utils;
 use regex::Regex;
-use std::collections::{HashMap, HashSet, LinkedList};
+use std::collections::{HashSet, LinkedList};
 
 fn print_sheet(dots: &HashSet<(u32, u32)>) {
     let (max_x, max_y) = dots.iter()
