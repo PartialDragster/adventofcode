@@ -32,6 +32,7 @@ fn main() {
         "year2021_day12" => year2021::day12::run(),
         "year2021_day13" => year2021::day13::run(),
         "year2021_day14" => year2021::day14::run(),
+        "year2021_day15" => year2021::day15::run(),
         puzzle => panic!("{} not recognised puzzle", puzzle),
     }
 }
