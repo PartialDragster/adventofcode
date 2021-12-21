@@ -1,0 +1,12 @@
+use std::str::FromStr;
+
+use crate::year2021::day18::SnailNumber;
+
+grammar;
+
+pub Term: SnailNumber = {
+  <n:Num> => SnailNumber::Leaf(n),
+  "[" <t1:Term> "," <t2:Term> "]" => SnailNumber::Node(Box::new(t1), Box::new(t2)),
+}
+
+Num: u32 = <s:r"[0-9]+"> => u32::from_str(s).unwrap(); 

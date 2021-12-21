@@ -6,8 +6,13 @@ edition = "2018"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
+[build-dependencies]
+lalrpop = "0.19.6"
+
 [dependencies]
 itertools = "0.8.0"
+lalrpop-util = "0.19.6"
 md5 = "0.7.0"
 regex = "1"
+reduce = "0.1.4"
 unordered-pair = "0.2.3"

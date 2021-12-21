@@ -1,3 +1,5 @@
+#[macro_use] extern crate lalrpop_util;
+
 use std::env;
 
 mod year2015;
@@ -34,6 +36,8 @@ fn main() {
         "year2021_day14" => year2021::day14::run(),
         "year2021_day15" => year2021::day15::run(),
         "year2021_day16" => year2021::day16::run(),
+        "year2021_day17" => year2021::day17::run(),
+        "year2021_day18" => year2021::day18::run(),
         puzzle => panic!("{} not recognised puzzle", puzzle),
     }
 }
