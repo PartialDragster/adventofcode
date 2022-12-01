@@ -4,6 +4,7 @@ use std::env;
 
 mod year2015;
 mod year2021;
+mod year2022;
 mod utils;
 
 fn main() {
@@ -38,6 +39,7 @@ fn main() {
         "year2021_day16" => year2021::day16::run(),
         "year2021_day17" => year2021::day17::run(),
         "year2021_day18" => year2021::day18::run(),
+        "year2022_day01" => year2022::day01::run(),
         puzzle => panic!("{} not recognised puzzle", puzzle),
     }
 }
